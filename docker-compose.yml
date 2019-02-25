@@ -12,6 +12,7 @@ services:
     links: 
       - hhvm
   hhvm:
+    network_mode: host
     build:
       context: ./docker/hhvm
     volumes:
@@ -21,8 +22,3 @@ services:
       - ./docker/hhvm/server.ini:/etc/hhvm/server.ini
     command: hhvm --mode server -vServer.AllowRunAsRoot=1 
     restart: always
-    tty: true
-    dns_search: .
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4

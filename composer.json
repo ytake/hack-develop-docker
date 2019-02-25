@@ -1,0 +1,21 @@
+{
+  "name": "ytake/hack-develop-docker",
+  "type": "Project",
+  "license": "MIT",
+  "keywords": [
+    "hack",
+    "hhvm"
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "hhvm": "^4.0",
+    "hhvm/hhvm-autoload": "^2.0",
+    "hhvm/hsl": "^4.0",
+    "hhvm/hsl-experimental": "^4.0"
+  },
+  "require-dev": {
+    "hhvm/hacktest": "^1.3",
+    "facebook/fbexpect": "^2.3",
+    "hhvm/hhast": "^4.0"
+  }
+}
